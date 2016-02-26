@@ -10,11 +10,18 @@
 		3380A17CDA8AA3599E2E8D8E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9A8DF4F956911F4D82D16E /* libPods.a */; };
 		992C2AB31C80B94100080E2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AB21C80B94100080E2C /* main.m */; };
 		992C2AB61C80B94100080E2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AB51C80B94100080E2C /* AppDelegate.m */; };
-		992C2AB91C80B94100080E2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AB81C80B94100080E2C /* ViewController.m */; };
 		992C2ABC1C80B94100080E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C2ABA1C80B94100080E2C /* Main.storyboard */; };
 		992C2ABE1C80B94100080E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992C2ABD1C80B94100080E2C /* Assets.xcassets */; };
 		992C2AC11C80B94100080E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C2ABF1C80B94100080E2C /* LaunchScreen.storyboard */; };
 		992C2ACC1C80B94100080E2C /* Star_WarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2ACB1C80B94100080E2C /* Star_WarsTests.m */; };
+		992C2ADB1C80CDAE00080E2C /* FilmCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2ADA1C80CDAE00080E2C /* FilmCollectionViewController.m */; };
+		992C2ADE1C80E57700080E2C /* HTTPGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2ADD1C80E57700080E2C /* HTTPGateway.m */; };
+		992C2AE61C80ECF100080E2C /* SWConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AE51C80ECF100080E2C /* SWConfig.m */; };
+		992C2AE91C80F83000080E2C /* FilmService.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AE81C80F83000080E2C /* FilmService.m */; };
+		992C2AEC1C80F99300080E2C /* FilmResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AEB1C80F99300080E2C /* FilmResponse.m */; };
+		992C2AEF1C80F99C00080E2C /* FilmsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AEE1C80F99C00080E2C /* FilmsResponse.m */; };
+		992C2AF21C80FAF800080E2C /* Film.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AF11C80FAF800080E2C /* Film.m */; };
+		992C2AF61C80FF6C00080E2C /* NSDateFormatter+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AF51C80FF6C00080E2C /* NSDateFormatter+ISO8601.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +40,6 @@
 		992C2AB21C80B94100080E2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		992C2AB41C80B94100080E2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		992C2AB51C80B94100080E2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		992C2AB71C80B94100080E2C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		992C2AB81C80B94100080E2C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		992C2ABB1C80B94100080E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		992C2ABD1C80B94100080E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		992C2AC01C80B94100080E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +47,22 @@
 		992C2AC71C80B94100080E2C /* Star-WarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star-WarsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		992C2ACB1C80B94100080E2C /* Star_WarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Star_WarsTests.m; sourceTree = "<group>"; };
 		992C2ACD1C80B94100080E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		992C2AD91C80CDAE00080E2C /* FilmCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmCollectionViewController.h; sourceTree = "<group>"; };
+		992C2ADA1C80CDAE00080E2C /* FilmCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmCollectionViewController.m; sourceTree = "<group>"; };
+		992C2ADC1C80E57700080E2C /* HTTPGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPGateway.h; sourceTree = "<group>"; };
+		992C2ADD1C80E57700080E2C /* HTTPGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPGateway.m; sourceTree = "<group>"; };
+		992C2AE41C80ECF100080E2C /* SWConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWConfig.h; sourceTree = "<group>"; };
+		992C2AE51C80ECF100080E2C /* SWConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWConfig.m; sourceTree = "<group>"; };
+		992C2AE71C80F83000080E2C /* FilmService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmService.h; sourceTree = "<group>"; };
+		992C2AE81C80F83000080E2C /* FilmService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmService.m; sourceTree = "<group>"; };
+		992C2AEA1C80F99300080E2C /* FilmResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmResponse.h; sourceTree = "<group>"; };
+		992C2AEB1C80F99300080E2C /* FilmResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmResponse.m; sourceTree = "<group>"; };
+		992C2AED1C80F99C00080E2C /* FilmsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmsResponse.h; sourceTree = "<group>"; };
+		992C2AEE1C80F99C00080E2C /* FilmsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmsResponse.m; sourceTree = "<group>"; };
+		992C2AF01C80FAF800080E2C /* Film.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Film.h; sourceTree = "<group>"; };
+		992C2AF11C80FAF800080E2C /* Film.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Film.m; sourceTree = "<group>"; };
+		992C2AF41C80FF6C00080E2C /* NSDateFormatter+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+ISO8601.h"; sourceTree = "<group>"; };
+		992C2AF51C80FF6C00080E2C /* NSDateFormatter+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ISO8601.m"; sourceTree = "<group>"; };
 		DAE32DB4484A1179A0626702 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC518B68D3A452590C8BC277 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,15 +109,10 @@
 		992C2AB01C80B94100080E2C /* Star-Wars */ = {
 			isa = PBXGroup;
 			children = (
-				992C2AB41C80B94100080E2C /* AppDelegate.h */,
-				992C2AB51C80B94100080E2C /* AppDelegate.m */,
-				992C2AB71C80B94100080E2C /* ViewController.h */,
-				992C2AB81C80B94100080E2C /* ViewController.m */,
-				992C2ABA1C80B94100080E2C /* Main.storyboard */,
-				992C2ABD1C80B94100080E2C /* Assets.xcassets */,
-				992C2ABF1C80B94100080E2C /* LaunchScreen.storyboard */,
-				992C2AC21C80B94100080E2C /* Info.plist */,
-				992C2AB11C80B94100080E2C /* Supporting Files */,
+				992C2AF31C80FF3F00080E2C /* External */,
+				992C2AD81C80CABD00080E2C /* App */,
+				992C2AD61C80CAAB00080E2C /* Core */,
+				992C2AD71C80CAB100080E2C /* UI */,
 			);
 			path = "Star-Wars";
 			sourceTree = "<group>";
@@ -104,6 +120,8 @@
 		992C2AB11C80B94100080E2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				992C2ABF1C80B94100080E2C /* LaunchScreen.storyboard */,
+				992C2AC21C80B94100080E2C /* Info.plist */,
 				992C2AB21C80B94100080E2C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -116,6 +134,95 @@
 				992C2ACD1C80B94100080E2C /* Info.plist */,
 			);
 			path = "Star-WarsTests";
+			sourceTree = "<group>";
+		};
+		992C2AD61C80CAAB00080E2C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				992C2ADF1C80EC8100080E2C /* HTTP */,
+				992C2AE01C80EC8900080E2C /* Services */,
+				992C2AE11C80EC9100080E2C /* Model */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		992C2AD71C80CAB100080E2C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				992C2ABA1C80B94100080E2C /* Main.storyboard */,
+				992C2AD91C80CDAE00080E2C /* FilmCollectionViewController.h */,
+				992C2ADA1C80CDAE00080E2C /* FilmCollectionViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		992C2AD81C80CABD00080E2C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				992C2AE41C80ECF100080E2C /* SWConfig.h */,
+				992C2AE51C80ECF100080E2C /* SWConfig.m */,
+				992C2AB41C80B94100080E2C /* AppDelegate.h */,
+				992C2AB51C80B94100080E2C /* AppDelegate.m */,
+				992C2ABD1C80B94100080E2C /* Assets.xcassets */,
+				992C2AB11C80B94100080E2C /* Supporting Files */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		992C2ADF1C80EC8100080E2C /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				992C2ADC1C80E57700080E2C /* HTTPGateway.h */,
+				992C2ADD1C80E57700080E2C /* HTTPGateway.m */,
+			);
+			name = HTTP;
+			sourceTree = "<group>";
+		};
+		992C2AE01C80EC8900080E2C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				992C2AE71C80F83000080E2C /* FilmService.h */,
+				992C2AE81C80F83000080E2C /* FilmService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		992C2AE11C80EC9100080E2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				992C2AE31C80EC9D00080E2C /* Responses */,
+				992C2AE21C80EC9700080E2C /* Models */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		992C2AE21C80EC9700080E2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				992C2AF01C80FAF800080E2C /* Film.h */,
+				992C2AF11C80FAF800080E2C /* Film.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		992C2AE31C80EC9D00080E2C /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				992C2AEA1C80F99300080E2C /* FilmResponse.h */,
+				992C2AEB1C80F99300080E2C /* FilmResponse.m */,
+				992C2AED1C80F99C00080E2C /* FilmsResponse.h */,
+				992C2AEE1C80F99C00080E2C /* FilmsResponse.m */,
+			);
+			name = Responses;
+			sourceTree = "<group>";
+		};
+		992C2AF31C80FF3F00080E2C /* External */ = {
+			isa = PBXGroup;
+			children = (
+				992C2AF41C80FF6C00080E2C /* NSDateFormatter+ISO8601.h */,
+				992C2AF51C80FF6C00080E2C /* NSDateFormatter+ISO8601.m */,
+			);
+			name = External;
 			sourceTree = "<group>";
 		};
 		B77356F266993C1BA06FA0ED /* Frameworks */ = {
@@ -286,9 +393,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				992C2AB91C80B94100080E2C /* ViewController.m in Sources */,
+				992C2AEC1C80F99300080E2C /* FilmResponse.m in Sources */,
+				992C2ADB1C80CDAE00080E2C /* FilmCollectionViewController.m in Sources */,
+				992C2AE91C80F83000080E2C /* FilmService.m in Sources */,
+				992C2AF21C80FAF800080E2C /* Film.m in Sources */,
 				992C2AB61C80B94100080E2C /* AppDelegate.m in Sources */,
+				992C2AEF1C80F99C00080E2C /* FilmsResponse.m in Sources */,
+				992C2ADE1C80E57700080E2C /* HTTPGateway.m in Sources */,
 				992C2AB31C80B94100080E2C /* main.m in Sources */,
+				992C2AE61C80ECF100080E2C /* SWConfig.m in Sources */,
+				992C2AF61C80FF6C00080E2C /* NSDateFormatter+ISO8601.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

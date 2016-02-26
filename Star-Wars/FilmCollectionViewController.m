@@ -1,22 +1,22 @@
 //
-//  ViewController.m
+//  FilmCollectionViewController.m
 //  Star-Wars
 //
 //  Created by Kristian Lien on 2/26/16.
 //  Copyright © 2016 Myriad Mobile. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FilmCollectionViewController.h"
 
-@interface ViewController ()
+@interface FilmCollectionViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FilmCollectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
