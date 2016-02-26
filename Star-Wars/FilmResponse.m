@@ -16,9 +16,16 @@
 {
     self = [super init];
     
+    NSError *mantleError;
+    
     if (self)
     {
-        _film = [MTLJSONAdapter]
+        _film = [MTLJSONAdapter modelOfClass:[Film class] fromJSONDictionary:dictionaryValue error:&mantleError];
+    }
+    
+    if (*error || mantleError)
+    {
+        return nil;
     }
     
     return self;

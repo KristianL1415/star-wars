@@ -14,7 +14,7 @@
 {
     NSDateFormatter *iso8601 = [NSDateFormatter new];
     
-    [iso8601 setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+    [iso8601 setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZ"];
     // ??? Do I actually want to set this?
 //    [iso8601 setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
     

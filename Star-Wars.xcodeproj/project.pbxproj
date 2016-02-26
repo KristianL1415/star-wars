@@ -22,6 +22,7 @@
 		992C2AEF1C80F99C00080E2C /* FilmsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AEE1C80F99C00080E2C /* FilmsResponse.m */; };
 		992C2AF21C80FAF800080E2C /* Film.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AF11C80FAF800080E2C /* Film.m */; };
 		992C2AF61C80FF6C00080E2C /* NSDateFormatter+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AF51C80FF6C00080E2C /* NSDateFormatter+ISO8601.m */; };
+		992C2AF81C810DEE00080E2C /* StarWarsFilmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AF71C810DEE00080E2C /* StarWarsFilmTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		992C2AF11C80FAF800080E2C /* Film.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Film.m; sourceTree = "<group>"; };
 		992C2AF41C80FF6C00080E2C /* NSDateFormatter+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+ISO8601.h"; sourceTree = "<group>"; };
 		992C2AF51C80FF6C00080E2C /* NSDateFormatter+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ISO8601.m"; sourceTree = "<group>"; };
+		992C2AF71C810DEE00080E2C /* StarWarsFilmTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarWarsFilmTests.m; sourceTree = "<group>"; };
 		DAE32DB4484A1179A0626702 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC518B68D3A452590C8BC277 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				992C2ACB1C80B94100080E2C /* Star_WarsTests.m */,
+				992C2AF71C810DEE00080E2C /* StarWarsFilmTests.m */,
 				992C2ACD1C80B94100080E2C /* Info.plist */,
 			);
 			path = "Star-WarsTests";
@@ -410,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992C2AF81C810DEE00080E2C /* StarWarsFilmTests.m in Sources */,
 				992C2ACC1C80B94100080E2C /* Star_WarsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,28 @@
 
 #import "FilmsResponse.h"
 
+#import "Film.h"
+
 @implementation FilmsResponse
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionaryValue error:(NSError *__autoreleasing*)error
+{
+    self = [super init];
+    
+    NSError *mantleError;
+    
+    if (self)
+    {
+        _count = dictionaryValue[@"count"];
+        _films = [MTLJSONAdapter modelsOfClass:[Film class] fromJSONArray:dictionaryValue[@"results"] error:&mantleError];
+    }
+    
+    if (*error || mantleError)
+    {
+        return nil;
+    }
+    
+    return self;
+}
 
 @end

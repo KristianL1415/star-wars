@@ -10,4 +10,9 @@
 
 @interface FilmsResponse : NSObject
 
+@property(nonatomic, strong) NSNumber *count;
+@property(nonatomic, strong) NSArray *films;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionaryValue error:(NSError *__autoreleasing*)error;
+
 @end
