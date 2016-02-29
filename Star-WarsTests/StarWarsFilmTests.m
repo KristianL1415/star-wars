@@ -62,7 +62,7 @@
 - (void)testGetFilm {
     XCTestExpectation *expectation = [self expectationWithDescription:@"allFilms"];
     
-    [[HTTPGateway sharedInstance] GET:@"film/1" parameters:nil completion:^(id response, NSError *error) {
+    [[HTTPGateway sharedInstance] GET:@"films/1" parameters:nil completion:^(id response, NSError *error) {
         XCTAssertNotNil(response, @"Get film by id call should return valid response.");
         XCTAssertNil(error, @"Get film by id call should not return an error.");
         

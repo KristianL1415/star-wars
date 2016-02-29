@@ -25,7 +25,7 @@ PODS:
   - Mantle/extobjc (2.0.6)
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.4)
+  - AFNetworking
   - Mantle
 
 SPEC CHECKSUMS:
