@@ -15,4 +15,10 @@
     return [NSURL URLWithString:@"http://swapi.co/api"];
 }
 
+// Turn mock data on and off here
++ (BOOL)isUsingMockData
+{
+    return YES;
+}
+
 @end

@@ -9,8 +9,18 @@
 #import "FilmService.h"
 
 #import "HTTPGateway.h"
+#import "MockGateway.h"
+
 #import "FilmResponse.h"
 #import "FilmsResponse.h"
+
+#import "SWConfig.h"
+
+@interface FilmService ()
+
+@property(nonatomic, strong) NSObject<MMGateway> *gateway;
+
+@end
 
 @implementation FilmService
 
@@ -26,9 +36,21 @@
     return sharedInstance;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        _gateway = [SWConfig isUsingMockData] ? [MockGateway sharedInstance] : [HTTPGateway sharedInstance];
+    }
+    
+    return self;
+}
+
 - (void)films:(FilmsHandler)handler
 {
-    [[HTTPGateway sharedInstance] GET:@"films" parameters:nil completion:^(id response, NSError *error) {
+    [self.gateway GET:@"films" parameters:nil completion:^(id response, NSError *error) {
         FilmsResponse *filmsResponse;
         
         if (!error)
@@ -46,7 +68,7 @@
 {
     NSString *endpoint = [NSString stringWithFormat:@"films/%@", filmId];
     
-    [[HTTPGateway sharedInstance] GET:endpoint parameters:nil completion:^(id response, NSError *error) {
+    [self.gateway GET:endpoint parameters:nil completion:^(id response, NSError *error) {
         FilmResponse *filmResponse;
         
         if (!error)

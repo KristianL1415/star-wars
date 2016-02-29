@@ -1,14 +1,17 @@
 //
-//  HTTPGateway.h
+//  MockGateway.h
 //  Star-Wars
 //
-//  Created by Kristian Lien on 2/26/16.
+//  Created by Kristian Lien on 2/29/16.
 //  Copyright © 2016 Myriad Mobile. All rights reserved.
 //
 
 #import "MMGateway.h"
 
-@interface HTTPGateway : NSObject <MMGateway>
+@interface MockGateway : NSObject <MMGateway>
+
+typedef void (^SuccessHandler)(NSURLSessionDataTask *task, id responseObject);
+typedef void (^FailureHandler)(NSURLSessionDataTask *task, NSError *error);
 
 + (instancetype)sharedInstance;
 

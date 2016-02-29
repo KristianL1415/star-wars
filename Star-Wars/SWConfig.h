@@ -11,5 +11,6 @@
 @interface SWConfig : NSObject
 
 + (NSURL *)baseUrl;
++ (BOOL)isUsingMockData;
 
 @end

@@ -13,6 +13,7 @@
 #import "FilmService.h"
 #import "FilmResponse.h"
 #import "FilmsResponse.h"
+#import "Film.h"
 
 @interface StarWarsFilmTests : XCTestCase
 
@@ -51,6 +52,34 @@
         
         XCTAssert([films isKindOfClass:[NSArray class]], @"Get all films call was not deserialized correctly.");
         XCTAssertNotNil(films, @"Get all films call was not deserialized correctly.");
+        
+        [expectation fulfill];
+    }];
+    
+    [self waitForExpectationsWithTimeout:60.0 handler:nil];
+}
+
+- (void)testGetFilm {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"allFilms"];
+    
+    [[HTTPGateway sharedInstance] GET:@"film/1" parameters:nil completion:^(id response, NSError *error) {
+        XCTAssertNotNil(response, @"Get film by id call should return valid response.");
+        XCTAssertNil(error, @"Get film by id call should not return an error.");
+        
+        [expectation fulfill];
+    }];
+    
+    [self waitForExpectationsWithTimeout:60.0 handler:nil];
+}
+
+- (void)testDeserializeFilmResponse {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"deserializeFilm"];
+    
+    [[FilmService sharedInstance] filmWithId:@1 completion:^(FilmResponse *response, NSError *error) {
+        Film *film = response.film;
+        
+        XCTAssert([film isKindOfClass:[Film class]], @"Get film by id call was not deserialized correctly.");
+        XCTAssertNotNil(film, @"Get film by id call was not deserialized correctly.");
         
         [expectation fulfill];
     }];

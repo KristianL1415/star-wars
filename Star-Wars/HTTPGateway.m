@@ -10,6 +10,8 @@
 
 #import <AFNetworking/AFNetworking.h>
 
+#import "SWConfig.h"
+
 @interface HTTPGateway ()
 
 @property(nonatomic, strong) AFHTTPSessionManager *sessionManager;
