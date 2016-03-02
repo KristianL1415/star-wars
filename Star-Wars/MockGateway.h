@@ -10,9 +10,6 @@
 
 @interface MockGateway : NSObject <MMGateway>
 
-typedef void (^SuccessHandler)(NSURLSessionDataTask *task, id responseObject);
-typedef void (^FailureHandler)(NSURLSessionDataTask *task, NSError *error);
-
 + (instancetype)sharedInstance;
 
 - (void)GET:(NSString *)endpoint parameters:(id)parameters completion:(ServiceHandler)handler;
