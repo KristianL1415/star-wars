@@ -23,8 +23,9 @@
         _film = [MTLJSONAdapter modelOfClass:[Film class] fromJSONDictionary:dictionaryValue error:&mantleError];
     }
     
-    if (*error || mantleError)
+    if (mantleError)
     {
+        *error = mantleError;
         return nil;
     }
     

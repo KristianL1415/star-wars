@@ -24,8 +24,9 @@
         _films = [MTLJSONAdapter modelsOfClass:[Film class] fromJSONArray:dictionaryValue[@"results"] error:&mantleError];
     }
     
-    if (*error || mantleError)
+    if (mantleError)
     {
+        *error = mantleError;
         return nil;
     }
     
