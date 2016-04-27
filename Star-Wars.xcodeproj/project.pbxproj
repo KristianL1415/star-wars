@@ -15,7 +15,7 @@
 		992C2ABE1C80B94100080E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992C2ABD1C80B94100080E2C /* Assets.xcassets */; };
 		992C2AC11C80B94100080E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 992C2ABF1C80B94100080E2C /* LaunchScreen.storyboard */; };
 		992C2ACC1C80B94100080E2C /* Star_WarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2ACB1C80B94100080E2C /* Star_WarsTests.m */; };
-		992C2ADB1C80CDAE00080E2C /* FilmCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2ADA1C80CDAE00080E2C /* FilmCollectionViewController.m */; };
+		992C2ADB1C80CDAE00080E2C /* FilmListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2ADA1C80CDAE00080E2C /* FilmListViewController.m */; };
 		992C2ADE1C80E57700080E2C /* HTTPGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2ADD1C80E57700080E2C /* HTTPGateway.m */; };
 		992C2AE61C80ECF100080E2C /* SWConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AE51C80ECF100080E2C /* SWConfig.m */; };
 		992C2AE91C80F83000080E2C /* FilmService.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2AE81C80F83000080E2C /* FilmService.m */; };
@@ -28,6 +28,9 @@
 		992C2B061C84B41C00080E2C /* films.json in Resources */ = {isa = PBXBuildFile; fileRef = 992C2B051C84B41C00080E2C /* films.json */; };
 		992C2B0B1C84BD3900080E2C /* MockGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 992C2B0A1C84BD3900080E2C /* MockGateway.m */; };
 		992C2B0D1C84DC8A00080E2C /* film.json in Resources */ = {isa = PBXBuildFile; fileRef = 992C2B0C1C84DC8A00080E2C /* film.json */; };
+		999C51691CD1395D00178C93 /* FilmListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C51681CD1395D00178C93 /* FilmListPresenter.m */; };
+		999C516E1CD1429800178C93 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C516D1CD1429800178C93 /* BaseViewController.m */; };
+		999C51711CD1516800178C93 /* FilmListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C51701CD1516800178C93 /* FilmListDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +56,8 @@
 		992C2AC71C80B94100080E2C /* Star-WarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Star-WarsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		992C2ACB1C80B94100080E2C /* Star_WarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Star_WarsTests.m; sourceTree = "<group>"; };
 		992C2ACD1C80B94100080E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		992C2AD91C80CDAE00080E2C /* FilmCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmCollectionViewController.h; sourceTree = "<group>"; };
-		992C2ADA1C80CDAE00080E2C /* FilmCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmCollectionViewController.m; sourceTree = "<group>"; };
+		992C2AD91C80CDAE00080E2C /* FilmListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmListViewController.h; sourceTree = "<group>"; };
+		992C2ADA1C80CDAE00080E2C /* FilmListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmListViewController.m; sourceTree = "<group>"; };
 		992C2ADC1C80E57700080E2C /* HTTPGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPGateway.h; sourceTree = "<group>"; };
 		992C2ADD1C80E57700080E2C /* HTTPGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPGateway.m; sourceTree = "<group>"; };
 		992C2AE41C80ECF100080E2C /* SWConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWConfig.h; sourceTree = "<group>"; };
@@ -77,6 +80,13 @@
 		992C2B091C84BD3900080E2C /* MockGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGateway.h; sourceTree = "<group>"; };
 		992C2B0A1C84BD3900080E2C /* MockGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGateway.m; sourceTree = "<group>"; };
 		992C2B0C1C84DC8A00080E2C /* film.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = film.json; sourceTree = "<group>"; };
+		999C51671CD1395D00178C93 /* FilmListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmListPresenter.h; sourceTree = "<group>"; };
+		999C51681CD1395D00178C93 /* FilmListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmListPresenter.m; sourceTree = "<group>"; };
+		999C516B1CD13F7800178C93 /* FilmListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmListView.h; sourceTree = "<group>"; };
+		999C516C1CD1429800178C93 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		999C516D1CD1429800178C93 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		999C516F1CD1516800178C93 /* FilmListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmListDataSource.h; sourceTree = "<group>"; };
+		999C51701CD1516800178C93 /* FilmListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmListDataSource.m; sourceTree = "<group>"; };
 		DAE32DB4484A1179A0626702 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC518B68D3A452590C8BC277 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,8 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				992C2ABA1C80B94100080E2C /* Main.storyboard */,
-				992C2AD91C80CDAE00080E2C /* FilmCollectionViewController.h */,
-				992C2ADA1C80CDAE00080E2C /* FilmCollectionViewController.m */,
+				999C516C1CD1429800178C93 /* BaseViewController.h */,
+				999C516D1CD1429800178C93 /* BaseViewController.m */,
+				999C51661CD1392000178C93 /* Film Collection */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -270,6 +281,20 @@
 				992C2AFA1C825FDD00080E2C /* Mock Data */,
 			);
 			name = Mock;
+			sourceTree = "<group>";
+		};
+		999C51661CD1392000178C93 /* Film Collection */ = {
+			isa = PBXGroup;
+			children = (
+				999C51671CD1395D00178C93 /* FilmListPresenter.h */,
+				999C51681CD1395D00178C93 /* FilmListPresenter.m */,
+				999C516B1CD13F7800178C93 /* FilmListView.h */,
+				992C2AD91C80CDAE00080E2C /* FilmListViewController.h */,
+				992C2ADA1C80CDAE00080E2C /* FilmListViewController.m */,
+				999C516F1CD1516800178C93 /* FilmListDataSource.h */,
+				999C51701CD1516800178C93 /* FilmListDataSource.m */,
+			);
+			name = "Film Collection";
 			sourceTree = "<group>";
 		};
 		B77356F266993C1BA06FA0ED /* Frameworks */ = {
@@ -491,9 +516,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				992C2AEC1C80F99300080E2C /* FilmResponse.m in Sources */,
-				992C2ADB1C80CDAE00080E2C /* FilmCollectionViewController.m in Sources */,
+				999C51691CD1395D00178C93 /* FilmListPresenter.m in Sources */,
+				992C2ADB1C80CDAE00080E2C /* FilmListViewController.m in Sources */,
 				992C2AE91C80F83000080E2C /* FilmService.m in Sources */,
 				992C2AF21C80FAF800080E2C /* Film.m in Sources */,
+				999C516E1CD1429800178C93 /* BaseViewController.m in Sources */,
 				992C2AB61C80B94100080E2C /* AppDelegate.m in Sources */,
 				992C2B0B1C84BD3900080E2C /* MockGateway.m in Sources */,
 				992C2AEF1C80F99C00080E2C /* FilmsResponse.m in Sources */,
@@ -501,6 +528,7 @@
 				992C2B031C84B0A800080E2C /* MockDataFactory.m in Sources */,
 				992C2AB31C80B94100080E2C /* main.m in Sources */,
 				992C2AE61C80ECF100080E2C /* SWConfig.m in Sources */,
+				999C51711CD1516800178C93 /* FilmListDataSource.m in Sources */,
 				992C2AF61C80FF6C00080E2C /* NSDateFormatter+ISO8601.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
