@@ -18,7 +18,7 @@ typedef void (^ServiceHandler)(id response, NSError *error);
  *  @param params            Required parameters
  *  @param completionHandler Completion handler
  */
-- (void)GET:(NSString *)endpoint parameters:(id)parameters completion:(ServiceHandler)completion;
+- (void)GET:(NSString *)endpoint parameters:(id)parameters completion:(ServiceHandler)handler;
 
 /**
  *  A POST request packaging required Authentication and other headers based on the current token
@@ -27,7 +27,7 @@ typedef void (^ServiceHandler)(id response, NSError *error);
  *  @param params            Required parameters
  *  @param completionHandler Completion handler
  */
-- (void)POST:(NSString *)endpoint parameters:(id)parameters completion:(ServiceHandler)completion;
+- (void)POST:(NSString *)endpoint parameters:(id)parameters completion:(ServiceHandler)handler;
 
 /**
  *  A PUT request packaging required Authentication and other headers based on the current token
@@ -36,7 +36,7 @@ typedef void (^ServiceHandler)(id response, NSError *error);
  *  @param params            Required parameters
  *  @param completionHandler Completion handler
  */
-- (void)PUT:(NSString *)endpoint parameters:(id)parameters completion:(ServiceHandler)completion;
+- (void)PUT:(NSString *)endpoint parameters:(id)parameters completion:(ServiceHandler)handler;
 
 /**
  *  A DELETE require packaging required Authentication and other headers based on the current token.
@@ -45,6 +45,6 @@ typedef void (^ServiceHandler)(id response, NSError *error);
  *  @param parameters        Required parameters
  *  @param completionHandler Completion handler
  */
-- (void)DELETE:(NSString *)endpoint parameters:(id)parameters completion:(ServiceHandler)completion;
+- (void)DELETE:(NSString *)endpoint parameters:(id)parameters completion:(ServiceHandler)handler;
 
 @end
