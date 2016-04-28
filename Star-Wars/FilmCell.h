@@ -12,5 +12,6 @@
 
 @property(nonatomic, weak) IBOutlet UILabel *title;
 @property(nonatomic, weak) IBOutlet UILabel *director;
+@property(nonatomic, weak) IBOutlet UILabel *releaseDate;
 
 @end

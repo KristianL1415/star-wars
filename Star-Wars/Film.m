@@ -34,24 +34,33 @@
 
 + (NSValueTransformer *)releaseDateJSONTransformer
 {
-    return [self dateJSONTransformer];
+    return [self dateJSONTransformerWithFormatter:[NSDateFormatter yearMonthDay]];
 }
 
 + (NSValueTransformer *)createdJSONTransformer
 {
-    return [self dateJSONTransformer];
+    return [self dateJSONTransformerWithFormatter:[NSDateFormatter iso8601]];
 }
 
 + (NSValueTransformer *)editedJSONTransformer
 {
-    return [self dateJSONTransformer];
+    return [self dateJSONTransformerWithFormatter:[NSDateFormatter iso8601]];
 }
 
-+ (NSValueTransformer *)dateJSONTransformer
++ (NSValueTransformer *)dateJSONTransformerWithFormatter:(NSDateFormatter *)formatter
 {
     return [MTLValueTransformer transformerUsingForwardBlock:^id(id value, BOOL *success, NSError *__autoreleasing *error) {
-        return [[NSDateFormatter iso8601] dateFromString:value];
+        return [formatter dateFromString:value];
     }];
+}
+
+- (NSString *)releaseDateLongFormat
+{
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    formatter.dateStyle = NSDateFormatterLongStyle;
+    NSString *release = [formatter stringFromDate:self.releaseDate];
+    
+    return release;
 }
 
 @end

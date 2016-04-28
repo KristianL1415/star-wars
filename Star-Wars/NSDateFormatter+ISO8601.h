@@ -11,5 +11,6 @@
 @interface NSDateFormatter (ISO8601)
 
 + (NSDateFormatter *)iso8601;
++ (NSDateFormatter *)yearMonthDay;
 
 @end

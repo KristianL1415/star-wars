@@ -27,4 +27,6 @@
 @property(nonatomic, copy) NSDate *edited;
 @property(nonatomic, copy) NSString *url;
 
+- (NSString *)releaseDateLongFormat;
+
 @end

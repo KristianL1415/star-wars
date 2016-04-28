@@ -20,7 +20,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ekd-N3-W9a">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jkg-NK-UYu">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jkg-NK-UYu">
                                 <rect key="frame" x="8" y="64" width="584" height="536"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="RSX-hr-0TV">
@@ -37,6 +37,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <visualEffectView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyP-Qo-O5Q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YpV-lc-7hE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </view>
+                                                    <blurEffect style="dark"/>
+                                                </visualEffectView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILM NAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84u-my-NCJ">
                                                     <rect key="frame" x="8" y="8" width="164" height="24"/>
                                                     <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
@@ -55,22 +63,43 @@
                                                     <color key="textColor" red="0.89411764705882346" green="0.96078431372549022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyX-tB-KJj">
+                                                    <rect key="frame" x="8" y="79" width="87" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="12"/>
+                                                    <color key="textColor" red="0.87058823529411766" green="0.14117647058823529" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1w-lm-0tH">
+                                                    <rect key="frame" x="8" y="93" width="34" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                                                    <color key="textColor" red="0.99215686274509807" green="0.93725490196078431" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" red="0.16862745098039217" green="0.17254901960784313" blue="0.27450980392156865" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="E1w-lm-0tH" firstAttribute="top" secondItem="MyX-tB-KJj" secondAttribute="bottom" id="2A1-H2-Dpu"/>
+                                            <constraint firstAttribute="bottom" secondItem="eyP-Qo-O5Q" secondAttribute="bottom" id="4re-pI-gxH"/>
+                                            <constraint firstItem="odB-SG-R2j" firstAttribute="leading" secondItem="mEQ-w9-BKL" secondAttribute="leading" id="5l8-4p-zyF"/>
                                             <constraint firstItem="odB-SG-R2j" firstAttribute="top" secondItem="mEQ-w9-BKL" secondAttribute="bottom" id="6KZ-Tl-ul9"/>
+                                            <constraint firstItem="eyP-Qo-O5Q" firstAttribute="top" secondItem="cBb-A2-dFX" secondAttribute="top" id="9hX-eB-aUE"/>
                                             <constraint firstItem="84u-my-NCJ" firstAttribute="centerX" secondItem="cBb-A2-dFX" secondAttribute="centerX" id="KKE-hx-d0K"/>
+                                            <constraint firstItem="MyX-tB-KJj" firstAttribute="top" secondItem="odB-SG-R2j" secondAttribute="bottom" constant="8" id="LcQ-lA-zFv"/>
+                                            <constraint firstItem="E1w-lm-0tH" firstAttribute="leading" secondItem="MyX-tB-KJj" secondAttribute="leading" id="PTp-XT-RRF"/>
                                             <constraint firstItem="mEQ-w9-BKL" firstAttribute="leading" secondItem="cBb-A2-dFX" secondAttribute="leading" constant="8" id="Qqp-z4-QNl"/>
                                             <constraint firstItem="mEQ-w9-BKL" firstAttribute="top" secondItem="84u-my-NCJ" secondAttribute="bottom" constant="8" id="UDP-CI-Ma6"/>
                                             <constraint firstItem="84u-my-NCJ" firstAttribute="top" secondItem="cBb-A2-dFX" secondAttribute="top" constant="8" id="Zbn-GY-HpQ"/>
                                             <constraint firstItem="84u-my-NCJ" firstAttribute="leading" secondItem="cBb-A2-dFX" secondAttribute="leading" constant="8" id="cp0-pG-e07"/>
                                             <constraint firstAttribute="trailing" secondItem="84u-my-NCJ" secondAttribute="trailing" constant="8" id="euY-uX-3eM"/>
-                                            <constraint firstItem="odB-SG-R2j" firstAttribute="leading" secondItem="cBb-A2-dFX" secondAttribute="leading" constant="8" id="jxT-Gp-jMV"/>
+                                            <constraint firstItem="MyX-tB-KJj" firstAttribute="leading" secondItem="cBb-A2-dFX" secondAttribute="leading" constant="8" id="rHF-hd-oJu"/>
+                                            <constraint firstItem="eyP-Qo-O5Q" firstAttribute="leading" secondItem="cBb-A2-dFX" secondAttribute="leading" id="tse-Zp-TmZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="eyP-Qo-O5Q" secondAttribute="trailing" id="vzZ-sn-fHJ"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="director" destination="odB-SG-R2j" id="OjX-Dn-mWX"/>
+                                            <outlet property="releaseDate" destination="E1w-lm-0tH" id="nJz-LQ-Daj"/>
                                             <outlet property="title" destination="84u-my-NCJ" id="rAF-ax-JUR"/>
                                         </connections>
                                     </collectionViewCell>

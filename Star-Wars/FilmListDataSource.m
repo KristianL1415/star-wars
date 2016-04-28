@@ -56,6 +56,7 @@ CGFloat const kCellSpacing = 8.0;
     Film *film = self.films[indexPath.row];
     cell.title.text = film.title;
     cell.director.text = film.director;
+    cell.releaseDate.text = [film releaseDateLongFormat];
     
     return cell;
 }
