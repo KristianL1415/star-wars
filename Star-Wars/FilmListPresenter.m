@@ -10,6 +10,7 @@
 
 #import "FilmService.h"
 #import "FilmsResponse.h"
+#import "Film.h"
 
 @interface FilmListPresenter ()
 
@@ -37,7 +38,13 @@
             [self.filmListView setNetworkError:error.localizedDescription];
         }
         else {
-            [self.filmListView appendFilms:response.films];
+            NSArray *sortedFilms = [response.films sortedArrayUsingComparator:^NSComparisonResult(Film *film1, Film *film2) {
+                NSNumber *first = film1.episodeId;
+                NSNumber *second = film2.episodeId;
+                return [first compare:second];
+            }];
+            
+            [self.filmListView appendFilms:sortedFilms];
         }
     }];
 }
