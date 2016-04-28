@@ -27,15 +27,15 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filmCell" id="cBb-A2-dFX">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filmCell" id="cBb-A2-dFX" customClass="FilmCell">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILM NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84u-my-NCJ">
-                                                    <rect key="frame" x="36" y="8" width="109" height="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILM NAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84u-my-NCJ">
+                                                    <rect key="frame" x="8" y="8" width="164" height="24"/>
                                                     <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
                                                     <color key="textColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -46,7 +46,12 @@
                                         <constraints>
                                             <constraint firstItem="84u-my-NCJ" firstAttribute="centerX" secondItem="cBb-A2-dFX" secondAttribute="centerX" id="KKE-hx-d0K"/>
                                             <constraint firstItem="84u-my-NCJ" firstAttribute="top" secondItem="cBb-A2-dFX" secondAttribute="top" constant="8" id="Zbn-GY-HpQ"/>
+                                            <constraint firstItem="84u-my-NCJ" firstAttribute="leading" secondItem="cBb-A2-dFX" secondAttribute="leading" constant="8" id="cp0-pG-e07"/>
+                                            <constraint firstAttribute="trailing" secondItem="84u-my-NCJ" secondAttribute="trailing" constant="8" id="euY-uX-3eM"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="title" destination="84u-my-NCJ" id="rAF-ax-JUR"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

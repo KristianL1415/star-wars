@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "FilmListView.h"
+
 @protocol FilmListPresenter <NSObject>
 
 - (void)getFilmList; // Could pass a page here for pagination
@@ -15,5 +17,7 @@
 @end
 
 @interface FilmListPresenter : NSObject <FilmListPresenter>
+
+- (instancetype)initWithView:(id<FilmListView>)view;
 
 @end

@@ -8,6 +8,9 @@
 
 #import "FilmListDataSource.h"
 
+#import "Film.h"
+#import "FilmCell.h"
+
 @interface FilmListDataSource () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property(nonatomic, strong) UICollectionView *collectionView;
@@ -34,6 +37,7 @@
 
 - (void)appendFilms:(NSArray *)films
 {
+    // TODO If pagination is needed, we won't want to overwrite the existing list
     self.films = [self.films arrayByAddingObjectsFromArray:films];
     [self.collectionView reloadData];
 }
@@ -45,7 +49,10 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"filmCell" forIndexPath:indexPath];
+    FilmCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"filmCell" forIndexPath:indexPath];
+    
+    Film *film = self.films[indexPath.row];
+    cell.title.text = film.title;
     
     return cell;
 }

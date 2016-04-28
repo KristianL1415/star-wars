@@ -31,6 +31,7 @@
 		999C51691CD1395D00178C93 /* FilmListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C51681CD1395D00178C93 /* FilmListPresenter.m */; };
 		999C516E1CD1429800178C93 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C516D1CD1429800178C93 /* BaseViewController.m */; };
 		999C51711CD1516800178C93 /* FilmListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C51701CD1516800178C93 /* FilmListDataSource.m */; };
+		999C51741CD2779B00178C93 /* FilmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C51731CD2779B00178C93 /* FilmCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		999C516D1CD1429800178C93 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		999C516F1CD1516800178C93 /* FilmListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmListDataSource.h; sourceTree = "<group>"; };
 		999C51701CD1516800178C93 /* FilmListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmListDataSource.m; sourceTree = "<group>"; };
+		999C51721CD2779B00178C93 /* FilmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmCell.h; sourceTree = "<group>"; };
+		999C51731CD2779B00178C93 /* FilmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmCell.m; sourceTree = "<group>"; };
 		DAE32DB4484A1179A0626702 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC518B68D3A452590C8BC277 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -293,6 +296,8 @@
 				992C2ADA1C80CDAE00080E2C /* FilmListViewController.m */,
 				999C516F1CD1516800178C93 /* FilmListDataSource.h */,
 				999C51701CD1516800178C93 /* FilmListDataSource.m */,
+				999C51721CD2779B00178C93 /* FilmCell.h */,
+				999C51731CD2779B00178C93 /* FilmCell.m */,
 			);
 			name = "Film Collection";
 			sourceTree = "<group>";
@@ -528,6 +533,7 @@
 				992C2B031C84B0A800080E2C /* MockDataFactory.m in Sources */,
 				992C2AB31C80B94100080E2C /* main.m in Sources */,
 				992C2AE61C80ECF100080E2C /* SWConfig.m in Sources */,
+				999C51741CD2779B00178C93 /* FilmCell.m in Sources */,
 				999C51711CD1516800178C93 /* FilmListDataSource.m in Sources */,
 				992C2AF61C80FF6C00080E2C /* NSDateFormatter+ISO8601.m in Sources */,
 			);

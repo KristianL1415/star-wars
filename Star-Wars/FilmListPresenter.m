@@ -9,7 +9,6 @@
 #import "FilmListPresenter.h"
 
 #import "FilmService.h"
-#import "FilmListView.h"
 #import "FilmsResponse.h"
 
 @interface FilmListPresenter ()
@@ -19,6 +18,17 @@
 @end
 
 @implementation FilmListPresenter
+
+- (instancetype)initWithView:(id<FilmListView>)view
+{
+    self = [super init];
+    
+    if (self) {
+        _filmListView = view;
+    }
+    
+    return self;
+}
 
 - (void)getFilmList
 {

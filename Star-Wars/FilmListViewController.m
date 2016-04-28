@@ -28,17 +28,17 @@
     [super viewDidLoad];
     
     [self initializeComponents];
+    [self.presenter getFilmList];
 }
 
 - (void)initializeComponents
 {
-    self.presenter = [FilmListPresenter new];
+    self.presenter = [[FilmListPresenter alloc] initWithView:self];
     self.dataSource = [[FilmListDataSource alloc] initWithCollectionView:self.collectionView];
 }
 
 - (void)appendFilms:(NSArray *)films
 {
-    // TODO If pagination is needed, we won't want to overwrite the existing list
     [self.dataSource appendFilms:films];
 }
 
