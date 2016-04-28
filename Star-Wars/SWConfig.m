@@ -8,6 +8,8 @@
 
 #import "SWConfig.h"
 
+#import "UIColor+StarWars.h"
+
 @implementation SWConfig
 
 + (NSURL *)baseUrl
@@ -19,6 +21,15 @@
 + (BOOL)isUsingMockData
 {
     return NO;
+}
+
++ (void)applicationDidFinishLaunching
+{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor translucentPurple]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName : [UIColor titleYellow],
+                                                           NSFontAttributeName : [UIFont fontWithName:@"Menlo" size:21.0],
+                                                           }];
 }
 
 @end

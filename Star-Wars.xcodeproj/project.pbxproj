@@ -32,6 +32,7 @@
 		999C516E1CD1429800178C93 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C516D1CD1429800178C93 /* BaseViewController.m */; };
 		999C51711CD1516800178C93 /* FilmListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C51701CD1516800178C93 /* FilmListDataSource.m */; };
 		999C51741CD2779B00178C93 /* FilmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C51731CD2779B00178C93 /* FilmCell.m */; };
+		999C517A1CD2B1AD00178C93 /* UIColor+StarWars.m in Sources */ = {isa = PBXBuildFile; fileRef = 999C51791CD2B1AD00178C93 /* UIColor+StarWars.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		999C51701CD1516800178C93 /* FilmListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmListDataSource.m; sourceTree = "<group>"; };
 		999C51721CD2779B00178C93 /* FilmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmCell.h; sourceTree = "<group>"; };
 		999C51731CD2779B00178C93 /* FilmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmCell.m; sourceTree = "<group>"; };
+		999C51781CD2B1AD00178C93 /* UIColor+StarWars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+StarWars.h"; sourceTree = "<group>"; };
+		999C51791CD2B1AD00178C93 /* UIColor+StarWars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+StarWars.m"; sourceTree = "<group>"; };
 		DAE32DB4484A1179A0626702 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC518B68D3A452590C8BC277 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,10 +181,9 @@
 		992C2AD71C80CAB100080E2C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				999C51751CD2B18B00178C93 /* Stories */,
+				999C51761CD2B19600178C93 /* Shared */,
 				992C2ABA1C80B94100080E2C /* Main.storyboard */,
-				999C516C1CD1429800178C93 /* BaseViewController.h */,
-				999C516D1CD1429800178C93 /* BaseViewController.m */,
-				999C51661CD1392000178C93 /* Film Collection */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -300,6 +302,41 @@
 				999C51731CD2779B00178C93 /* FilmCell.m */,
 			);
 			name = "Film Collection";
+			sourceTree = "<group>";
+		};
+		999C51751CD2B18B00178C93 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				999C51661CD1392000178C93 /* Film Collection */,
+			);
+			name = Stories;
+			sourceTree = "<group>";
+		};
+		999C51761CD2B19600178C93 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				999C517B1CD2B22800178C93 /* Base Classes */,
+				999C51771CD2B19B00178C93 /* Categories */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		999C51771CD2B19B00178C93 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				999C51781CD2B1AD00178C93 /* UIColor+StarWars.h */,
+				999C51791CD2B1AD00178C93 /* UIColor+StarWars.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		999C517B1CD2B22800178C93 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				999C516C1CD1429800178C93 /* BaseViewController.h */,
+				999C516D1CD1429800178C93 /* BaseViewController.m */,
+			);
+			name = "Base Classes";
 			sourceTree = "<group>";
 		};
 		B77356F266993C1BA06FA0ED /* Frameworks */ = {
@@ -521,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				992C2AEC1C80F99300080E2C /* FilmResponse.m in Sources */,
+				999C517A1CD2B1AD00178C93 /* UIColor+StarWars.m in Sources */,
 				999C51691CD1395D00178C93 /* FilmListPresenter.m in Sources */,
 				992C2ADB1C80CDAE00080E2C /* FilmListViewController.m in Sources */,
 				992C2AE91C80F83000080E2C /* FilmService.m in Sources */,

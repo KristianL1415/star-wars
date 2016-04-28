@@ -28,13 +28,20 @@
     [super viewDidLoad];
     
     [self initializeComponents];
-    [self.presenter getFilmList];
+    [self setupInterface];
 }
 
 - (void)initializeComponents
 {
     self.presenter = [[FilmListPresenter alloc] initWithView:self];
     self.dataSource = [[FilmListDataSource alloc] initWithCollectionView:self.collectionView];
+    
+    [self.presenter getFilmList];
+}
+
+- (void)setupInterface
+{
+    self.title = @"STAR WARS";
 }
 
 - (void)appendFilms:(NSArray *)films

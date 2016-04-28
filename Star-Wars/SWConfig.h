@@ -6,11 +6,12 @@
 //  Copyright © 2016 Myriad Mobile. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface SWConfig : NSObject
 
 + (NSURL *)baseUrl;
 + (BOOL)isUsingMockData;
++ (void)applicationDidFinishLaunching;
 
 @end

@@ -20,6 +20,8 @@
 
 @implementation FilmListDataSource
 
+CGFloat const kCellSpacing = 8.0;
+
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView
 {
     self = [super init];
@@ -53,6 +55,7 @@
     
     Film *film = self.films[indexPath.row];
     cell.title.text = film.title;
+    cell.director.text = film.director;
     
     return cell;
 }
@@ -63,28 +66,29 @@
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(180.0, 180.0);
+    CGFloat edge = (collectionView.frame.size.width - kCellSpacing) / 2;
+    return CGSizeMake(edge, edge);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
                         layout:(UICollectionViewLayout *)collectionViewLayout
         insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsZero;
+    return UIEdgeInsetsMake(8.0, 0.0, 8.0, 0.0);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView
                    layout:(UICollectionViewLayout *)collectionViewLayout
 minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 8.0;
+    return kCellSpacing;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView
                    layout:(UICollectionViewLayout *)collectionViewLayout
 minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 8.0;
+    return kCellSpacing/2;
 }
 
 @end
